@@ -1,0 +1,36 @@
+/* InitialPage.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column; /* Header on top, content below */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  margin-top: 120px; /* Space for the fixed header */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.main {
+  flex: 1; /* Main content area grows to fill remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling if content overflows vertically */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text within the element */
+}
+
+.main h1 {
+  margin-bottom: 20px; /* Add some space between the h1 and the CardGrid */
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,0 +1,65 @@
+/* AsideInitialPage.module.css */
+
+.aside {
+    position: fixed;
+    top: 120px; /* Starts below the fixed header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 120px); /* Full height minus the header */
+    background-color: var(--background-color3);
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    transform: translateX(0); /* Initially shown */
+    overflow-y: auto;
+    z-index: 100; /* Below the header */
+    box-sizing: border-box;
+  }
+  
+  .hidden {
+    transform: translateX(-100%); /* Hide aside by moving it left out of view */
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .nav li {
+    margin: 20px 0;
+  }
+  
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+  }
+  
+  .link:hover {
+    background-color: var(--primary-color-hover);
+    color: var(--text-color);
+  }
+  
+  .toggleButton {
+    position: fixed;
+    top: 122px;
+    left: 160px; /* Offset to the right of the aside */
+    background-color: var(--background-color2);
+    color: var(--text-color);
+    border: 2px solid var(--secondary-color-hover);
+    
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    z-index: 201; /* Ensures the button stays above the aside */
+  }
+  
+  .toggleButton:hover {
+    background-color: var(--primary-color-hover);
+  }
+  

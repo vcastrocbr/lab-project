@@ -1,0 +1,53 @@
+/* LanguageSelector.module.css */
+
+.languageSelectorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.languageLabel {
+  font-size: 14px;
+  color: var(--text-color2);
+  font-weight: bold;
+}
+
+.languageContainer {
+  display: flex; /* Align spans side by side */
+  align-items: center;
+  gap: 4px; /* Space between the spans */
+  position: relative;
+  cursor: pointer;
+}
+
+.selectedLanguageCode {
+  font-size: 14px;
+  color: var(--text-color2);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.dropdownArrow {
+  font-size: 14px;
+  color: var(--text-color2);
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Hide the select element but keep it functional */
+.languageSelector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid var(--background-color1);
+  border-radius: 6px;
+  background-color: var(--background-color3);
+}

@@ -1,0 +1,60 @@
+/* Messages.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column; /* Vertical stacking for the header, content, and link */
+  justify-content: space-between; /* Space between header, content, and link */
+  align-items: center; /* Center elements horizontally */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+}
+
+/* Wrapper for content areas */
+.contentWrapper {
+  display: flex;
+  flex: 1; /* Allows the content area to grow and fill available space */
+  width: 100%; /* Full width */
+  max-width: 1000px; /* Maximum width for content */
+  justify-content: space-between; /* Space between content and calculator */
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px 0;
+  margin-top: 120px; /* Space for the fixed header */
+}
+  
+  /* Styling for the message sections */
+  .messageSection {
+    margin-bottom: 20px;
+  }
+  
+  /* Header for the sections */
+  .sectionHeader {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styling for individual messages */
+  .message {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Sender/Recipient label */
+  .messageLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .pageButton {
+    cursor: pointer;
+  }
+  
+  .disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
